@@ -1,0 +1,14 @@
+﻿################################################################################
+# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
+################################################################################
+
+/CalculatorConsoleApplication/.vs/CalculatorConsoleApplication/FileContentIndex
+/CalculatorConsoleApplication/.vs/CalculatorConsoleApplication/v17/ipch/AutoPCH/eabf9f1d1538b8e3
+/CalculatorConsoleApplication/.vs/CalculatorConsoleApplication/v17/TestStore/0
+/CalculatorConsoleApplication/.vs/CalculatorConsoleApplication/v17
+/TrivialConsoleApplication/.vs/TrivialConsoleApplication/FileContentIndex/6aeac0b6-4fcf-482c-ba26-86723baf5095.vsidx
+/TrivialConsoleApplication/.vs/TrivialConsoleApplication/FileContentIndex
+/TrivialConsoleApplication/.vs/TrivialConsoleApplication/v17/ipch/AutoPCH/376efea7b15dc2a8
+/TrivialConsoleApplication/.vs/TrivialConsoleApplication/v17/Browse.VC.db
+/TrivialConsoleApplication/.vs/TrivialConsoleApplication/v17
+/TrivialConsoleApplication/.vs
