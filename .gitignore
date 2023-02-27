@@ -1,0 +1,12 @@
+﻿################################################################################
+# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
+################################################################################
+
+/CalculatorConsoleApplication/.vs/CalculatorConsoleApplication/v17/TestStore/0/testlog.manifest
+*.opendb
+*.db-wal
+*.db-shm
+/CalculatorConsoleApplication/.vs/CalculatorConsoleApplication/v17/Browse.VC.db
+*.testlog
+*.ipch
+*.vsidx
