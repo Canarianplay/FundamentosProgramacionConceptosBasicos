@@ -1,5 +1,6 @@
 // CalculaorWithSobrecargaOperadores.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-//
+// 
+//Mejora 1: Calculadora mejorada con sobrecarga de operadores y la posibilidad de usar tanto numeros enteros como decimales.
 
 #include <iostream>
 
@@ -9,18 +10,24 @@ class Numero
 {
 	public:
 		int valorEntero;
-		float valorDecimal;
+		double valorDecimal;
 
-		Numero() {}
+		Numero() 
+		{
+			valorEntero = 0;
+			valorDecimal = 0.0;
+		}
 
 		Numero(int v) 
 		{
 			valorEntero = v;
+			valorDecimal = static_cast<double>(v);
 		}
 
-		Numero(float v)
+		Numero(double v)
 		{
 			valorDecimal = v;
+			valorEntero = static_cast<int>(v);
 		}
 
 		//Entero
@@ -45,41 +52,37 @@ class Numero
 		}
 
 		//decimal
-		Numero operator+(const Numero& n)
+		Numero operator+(const double& d)
 		{
-			return Numero(valorDecimal + n.valorDecimal);
+			return Numero(valorDecimal + d);
 		}
 
-		Numero operator-(const Numero& n)
+		Numero operator-(const double& d)
 		{
-			return Numero(valorDecimal - n.valorDecimal);
+			return Numero(valorDecimal - d);
 		}
 
-		Numero operator*(const Numero& n)
+		Numero operator*(double& d)
 		{
-			return Numero(valorDecimal * n.valorDecimal);
+			return Numero(valorDecimal * d);
 		}
 
-		Numero operator/(const Numero& n)
+		Numero operator/(double& d)
 		{
-			return Numero(valorDecimal / n.valorDecimal);
+			return Numero(valorDecimal / d);
 		}
 
 		friend ostream& operator<< (ostream& os, const Numero& n);
 
 };
 
-ostream& operator<< (ostream& os, const Numero& n)
-{
-	os << n.valorEntero;
-	return os;
-}
 
 ostream& operator<< (ostream& os, const Numero& n)
 {
 	os << n.valorDecimal;
 	return os;
 }
+
 
 int main()
 {
@@ -90,9 +93,10 @@ int main()
 		Numero op1, op2, result = 0;
 		char operacion;
 
-		//Pedir al usuario el valor de los numeros y una operación matimatica
+		//Pedir al usuario el valor de los numeros y una operación matematica
 		cout << "Ingrese el valor del primer numero que desea operar: " << endl;
 		cin >> op1.valorDecimal;
+		op1.valorEntero = static_cast<int>(op1.valorDecimal);
 		cout << endl;
 
 		cout << "Que operacion desea realiza? (+,-,*,/,%)" << endl;
@@ -102,22 +106,59 @@ int main()
 
 		cout << "Ingrese el valor del segundo numero que desea operar: " << endl;
 		cin >> op2.valorDecimal;
+		op2.valorEntero = static_cast<int>(op2.valorDecimal);
 		cout << endl;
 
 		//Realizar la operacion matematica que se nos indica
 		switch (operacion)
 		{
 		case '+':
-			result = op1.operator+(op2.valorDecimal);
+
+			if (op1.valorEntero && op2.valorEntero) 
+			{
+				result = op1.operator+(op2.valorEntero);
+			}
+			else 
+			{
+				result = op1.operator+(op2.valorDecimal);
+			}
+			
 			break;
 		case '-':
-			result = op1.operator-(op2.valorDecimal);
+
+			if (op1.valorEntero && op2.valorEntero)
+			{
+				result = op1.operator-(op2.valorEntero);
+			}
+			else
+			{
+				result = op1.operator-(op2.valorDecimal);
+			}
+
 			break;
 		case '*':
-			result = op1.operator*(op2.valorDecimal);
+
+			if (op1.valorEntero && op2.valorEntero)
+			{
+				result = op1.operator*(op2.valorEntero);
+			}
+			else
+			{
+				result = op1.operator*(op2.valorDecimal);
+			}
+
 			break;
 		case '/':
-			result = op1.operator/(op2.valorDecimal);
+
+			if (op1.valorEntero && op2.valorEntero)
+			{
+				result = op1.operator/(op2.valorEntero);
+			}
+			else
+			{
+				result = op1.operator/(op2.valorDecimal);
+			}
+
 			break;
 		default:
 			cout << "Operacion introducida es invalida: " << endl;
