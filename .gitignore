@@ -11,3 +11,15 @@
 *.ipch
 *.vsidx
 /CalculatorConsoleApplication/.vs/CalculatorConsoleApplication/FileContentIndex/9ba9f832-6c2d-489e-b263-ca5313e8b0a8.vsidx
+/CalculatorConsoleApplication/CalculaorWithSobrecargaOperadores/.vs/CalculaorWithSobrecargaOperadores/v17/Browse.VC.db
+/CalculatorConsoleApplication/CalculaorWithSobrecargaOperadores/.vs/CalculaorWithSobrecargaOperadores/v17/.suo
+*.tlog
+/CalculatorConsoleApplication/CalculaorWithSobrecargaOperadores/x64/Debug/Calculao.41294e95.tlog/CL.command.1.tlog
+/CalculatorConsoleApplication/CalculaorWithSobrecargaOperadores/x64/Debug/vc143.pdb
+/CalculatorConsoleApplication/CalculaorWithSobrecargaOperadores/x64/Debug/vc143.idb
+/CalculatorConsoleApplication/CalculaorWithSobrecargaOperadores/x64/Debug/CalculaorWithSobrecargaOperadores.pdb
+/CalculatorConsoleApplication/CalculaorWithSobrecargaOperadores/x64/Debug/CalculaorWithSobrecargaOperadores.exe
+/CalculatorConsoleApplication/CalculaorWithSobrecargaOperadores/x64/Debug/CalculaorWithSobrecargaOperadores.ilk
+*.obj
+/CalculatorConsoleApplication/CalculaorWithSobrecargaOperadores/x64/Debug/CalculaorWithSobrecargaOperadores.log
+*.manifest
