@@ -1,6 +1,6 @@
 # FundamentosProgramacionConceptosBasicos
 
-## CalculaorWithSobrecargaOperadores.cpp
+## CalculaorWithSobrecargaOperadores.cpp (Clase 2)
 En este fichero podras encontrar dos upgrades realizados al proyecto CalculatorApplicationConsole en el que se realiza lo siguinte:
 - Sobrecarga de operadores
 - Utilización de diferentes tipos de datos
