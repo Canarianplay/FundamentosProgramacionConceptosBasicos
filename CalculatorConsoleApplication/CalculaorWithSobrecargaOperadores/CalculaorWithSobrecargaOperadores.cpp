@@ -176,4 +176,3 @@ int main()
 		}
 	} while (continuar != 'N');
 }
-
