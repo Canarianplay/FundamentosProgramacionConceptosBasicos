@@ -23,3 +23,7 @@
 *.obj
 /CalculatorConsoleApplication/CalculaorWithSobrecargaOperadores/x64/Debug/CalculaorWithSobrecargaOperadores.log
 *.manifest
+/CalculatorConsoleApplication/CalculaorWithSobrecargaOperadores/x64/Debug/Calculao.41294e95.tlog/link.command.1.tlog
+/CalculatorConsoleApplication/CalculaorWithSobrecargaOperadores/x64/Debug/Calculao.41294e95.tlog/link.write.1.tlog
+/CalculatorConsoleApplication/CalculaorWithSobrecargaOperadores/x64/Debug/Calculao.41294e95.tlog/link.read.1.tlog
+*.enc
