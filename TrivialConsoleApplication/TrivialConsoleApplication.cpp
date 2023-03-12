@@ -2,8 +2,8 @@
 Crea un programa que haga preguntas sobre un tema específico (por ejemplo, historia, geografía, cine, etc.) y permita al usuario ingresar sus respuestas. 
 Luego, imprima una puntuación al final basada en cuántas respuestas correctas proporcionó el usuario.*/
 
+/*ToDo futuras: Podemos añadir que cada vez que salga una pregunta esta se elimine del vector y asi no salga repetida*/
 
-/*ToDo: 1. Tenemos que arreglar que se puedan usar espacios en los string y que no tenga encuenta las mayus y minus*/
 
 #include <iostream>
 #include <string>
@@ -11,6 +11,15 @@ Luego, imprima una puntuación al final basada en cuántas respuestas correctas 
 #include <algorithm>
 
 using namespace std;
+
+enum Color 
+{
+	AZUL = 1,
+	ROJO,
+	VERDE,
+	AMARILLO
+};
+
 int main()
 {
 	//Variables "generales"
@@ -24,19 +33,40 @@ int main()
 		//Variables
 		int score = 0;
 		string respuesta;
-		char carta;
+		Color carta;
+		string cartaStr;
 
 		//Preguntar al usuario que tema quiere tratar
-		cout << "Elige entre las siguientes cartas: 1, 2, 3, 4" << endl;
-		cin >> carta;
+		cout << "Elige entre las siguientes cartas: azul, rojo, verde, amarillo" << endl;
+		cin >> cartaStr;
+		std::cin.ignore();
+
+		transform(cartaStr.begin(), cartaStr.end(), cartaStr.begin(), ::tolower);
+
+		if (cartaStr == "azul")
+		{
+			carta = AZUL;
+		}
+		else if (cartaStr == "rojo")
+		{
+			carta = ROJO;
+		}
+		else if (cartaStr == "verde")
+		{
+			carta = VERDE;
+		}
+		else if (cartaStr == "amarillo") 
+		{
+			carta = AMARILLO;
+		}
 
 		switch (carta)
 		{
-		case '1':
+		case AZUL:
 			cout << "El tema a tratar es deportes" << endl;
 
 			//Calcular que pregunta saldrá
-			srand(time(nullptr));
+			std::srand(time(nullptr));
 
 			for (int i = 0; i < 3; i++)
 			{
@@ -52,16 +82,14 @@ int main()
 				string pregunta = preguntas[pregunta_aleatoria];
 
 				cout << pregunta << endl;
-				cin >> respuesta;
-
-				//getline(cin, respuesta);
+				std::getline(std::cin, respuesta);
 				transform(respuesta.begin(), respuesta.end(), respuesta.begin(), ::tolower);
 
 			
 				//Hacer un validador simple
 				if(pregunta == preguntas[0])
 				{
-					if (respuesta == "realmadrid")
+					if (respuesta == "real madrid")
 					{
 						score++;
 					}
@@ -75,7 +103,7 @@ int main()
 				}
 				else if (pregunta == preguntas[2])
 				{
-					if (respuesta == "astonmartin")
+					if (respuesta == "aston martin")
 					{
 						score++;
 					}
@@ -89,18 +117,18 @@ int main()
 				}
 				else if (pregunta == preguntas[4])
 				{
-					if (respuesta == "chicagobulls")
+					if (respuesta == "chicago bulls")
 					{
 						score++;
 					}
 				}
 			}
 			break;
-		case '2':
+		case ROJO:
 			cout << "El tema a tratar es historia" << endl;
 
 			//Calcular que pregunta saldrá
-			srand(time(nullptr));
+			std::srand(time(nullptr));
 
 			for (int i = 0; i < 3; i++)
 			{
@@ -116,7 +144,7 @@ int main()
 				string pregunta = preguntas[pregunta_aleatoria];
 
 				cout << pregunta << endl;
-				cin >> respuesta;
+				std::getline(std::cin, respuesta);
 				transform(respuesta.begin(), respuesta.end(), respuesta.begin(), ::tolower);
 
 				//Hacer un validador simple
@@ -136,14 +164,14 @@ int main()
 				}
 				else if (pregunta == preguntas[2])
 				{
-					if (respuesta == "guerracivil")
+					if (respuesta == "guerra civil")
 					{
 						score++;
 					}
 				}
 				else if (pregunta == preguntas[3])
 				{
-					if (respuesta == "reyescatolicos")
+					if (respuesta == "reyes catolicos")
 					{
 						score++;
 					}
@@ -157,11 +185,11 @@ int main()
 				}
 			}
 			break;
-		case '3':
+		case VERDE:
 			cout << "El tema a tratar es cine" << endl;
 
 			//Calcular que pregunta saldrá
-			srand(time(nullptr));
+			std::srand(time(nullptr));
 
 			for (int i = 0; i < 3; i++)
 			{
@@ -177,20 +205,20 @@ int main()
 				string pregunta = preguntas[pregunta_aleatoria];
 
 				cout << pregunta << endl;
-				cin >> respuesta;
+				std::getline(std::cin, respuesta);
 				transform(respuesta.begin(), respuesta.end(), respuesta.begin(), ::tolower);
 
 				//Hacer un validador simple
 				if (pregunta == preguntas[0])
 				{
-					if (respuesta == "jessicachastain")
+					if (respuesta == "jessica chastain")
 					{
 						score++;
 					}
 				}
 				else if (pregunta == preguntas[1])
 				{
-					if (respuesta == "darthvader")
+					if (respuesta == "darth vader")
 					{
 						score++;
 					}
@@ -204,25 +232,25 @@ int main()
 				}
 				else if (pregunta == preguntas[3])
 				{
-					if (respuesta == "ironman")
+					if (respuesta == "iron man")
 					{
 						score++;
 					}
 				}
 				else if (pregunta == preguntas[4])
 				{
-					if (respuesta == "rockybalboa")
+					if (respuesta == "rocky balboa")
 					{
 						score++;
 					}
 				}
 			}
 			break;
-		case '4':
+		case AMARILLO:
 			cout << "El tema a tratar es politica" << endl;
 
 			//Calcular que pregunta saldrá
-			srand(time(nullptr));
+			std::srand(time(nullptr));
 
 			for (int i = 0; i < 3; i++)
 			{
@@ -238,13 +266,13 @@ int main()
 				string pregunta = preguntas[pregunta_aleatoria];
 
 				cout << pregunta << endl;
-				cin >> respuesta;
+				std::getline(std::cin, respuesta);
 				transform(respuesta.begin(), respuesta.end(), respuesta.begin(), ::tolower);
 
 				//Hacer un validador simple
 				if (pregunta == preguntas[0])
 				{
-					if (respuesta == "pedrosanchez")
+					if (respuesta == "pedro sanchez")
 					{
 						score++;
 					}
@@ -265,14 +293,14 @@ int main()
 				}
 				else if (pregunta == preguntas[3])
 				{
-					if (respuesta == "democratasyrepublicanos")
+					if (respuesta == "democratas y republicanos")
 					{
 						score++;
 					}
 				}
 				else if (pregunta == preguntas[4])
 				{
-					if (respuesta == "primerministro")
+					if (respuesta == "primer ministro")
 					{
 						score++;
 					}
@@ -290,31 +318,31 @@ int main()
 
 			switch (carta)
 			{
-			case '1':
+			case AZUL:
 				cout << " el platanito azul " << endl;
 				break;
-			case '2':
+			case ROJO:
 				cout << " el platanito rojo " << endl;
 				break;
-			case '3':
+			case AMARILLO:
 				cout << " el platanito amarillo " << endl;
 				break;
-			case '4':
-				cout << " el platanito rosado " << endl;
+			case VERDE:
+				cout << " el platanito verde " << endl;
 				break;
 			default:
 				break;
 			}
 			cout << endl;
 			cout << "Desea continuar ? (S/N) " << endl;
-			cin >> continuar;
+			std::cin >> continuar;
 		}
 		else
 		{
-			cout << "Mira ver si estudiamos un poquito más mi niño " << endl;
+			cout << "Mira ver si estudiamos un poquito mas platanito " << endl;
 			cout << endl;
 			cout << "Desea continuar ? (S/N) " << endl;
-			cin >> continuar;
+			std::cin >> continuar;
 		}
 
 	} while (continuar != 'N');
