@@ -3,13 +3,12 @@ Crea un programa que haga preguntas sobre un tema específico (por ejemplo, hist
 Luego, imprima una puntuación al final basada en cuántas respuestas correctas proporcionó el usuario.*/
 
 
-/*ToDo: 1. Tenemos que arreglar que se puedan usar espacios en los string y que no tenga encuenta las mayus y minus
-		2. Mirar porque la aleatoriedad repite siempre la primera 
-		3. Mirar ERROR out of range */
+/*ToDo: 1. Tenemos que arreglar que se puedan usar espacios en los string y que no tenga encuenta las mayus y minus*/
 
 #include <iostream>
 #include <string>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 int main()
@@ -36,6 +35,9 @@ int main()
 		case '1':
 			cout << "El tema a tratar es deportes" << endl;
 
+			//Calcular que pregunta saldrá
+			srand(time(nullptr));
+
 			for (int i = 0; i < 3; i++)
 			{
 				vector<string> preguntas = { "Quien gano la ultima liga espanola de futbol? ",
@@ -45,14 +47,17 @@ int main()
 											 "El equipo con mejores jugadores en la NBA en 1993" 
 				};
 
-				//Calcular que pregunta saldrá
-				srand(time(nullptr));
-				int pregunta_aleatoria = rand() % 5 + 2;
+				
+				int pregunta_aleatoria = rand() % preguntas.size();
 				string pregunta = preguntas[pregunta_aleatoria];
 
 				cout << pregunta << endl;
 				cin >> respuesta;
 
+				//getline(cin, respuesta);
+				transform(respuesta.begin(), respuesta.end(), respuesta.begin(), ::tolower);
+
+			
 				//Hacer un validador simple
 				if(pregunta == preguntas[0])
 				{
@@ -84,7 +89,7 @@ int main()
 				}
 				else if (pregunta == preguntas[4])
 				{
-					if (respuesta == "")
+					if (respuesta == "chicagobulls")
 					{
 						score++;
 					}
@@ -93,6 +98,9 @@ int main()
 			break;
 		case '2':
 			cout << "El tema a tratar es historia" << endl;
+
+			//Calcular que pregunta saldrá
+			srand(time(nullptr));
 
 			for (int i = 0; i < 3; i++)
 			{
@@ -103,13 +111,13 @@ int main()
 											 "Quien fue el dictador de italia ? "
 				};
 				
-				//Calcular que pregunta saldrá
-				srand(time(nullptr));
-				int pregunta_aleatoria = rand() % 5 + 1;
+				
+				int pregunta_aleatoria = rand() % preguntas.size();
 				string pregunta = preguntas[pregunta_aleatoria];
 
 				cout << pregunta << endl;
 				cin >> respuesta;
+				transform(respuesta.begin(), respuesta.end(), respuesta.begin(), ::tolower);
 
 				//Hacer un validador simple
 				if (pregunta == preguntas[0])
@@ -121,7 +129,7 @@ int main()
 				}
 				else if (pregunta == preguntas[1])
 				{
-					if (respuesta == "Fleming")
+					if (respuesta == "fleming")
 					{
 						score++;
 					}
@@ -142,7 +150,7 @@ int main()
 				}
 				else if (pregunta == preguntas[4])
 				{
-					if (respuesta == "Mussolini")
+					if (respuesta == "mussolini")
 					{
 						score++;
 					}
@@ -151,6 +159,9 @@ int main()
 			break;
 		case '3':
 			cout << "El tema a tratar es cine" << endl;
+
+			//Calcular que pregunta saldrá
+			srand(time(nullptr));
 
 			for (int i = 0; i < 3; i++)
 			{
@@ -161,13 +172,13 @@ int main()
 											 "Como se llama el bxeador itloamericano más famoso del cine ? "
 				};
 				
-				//Calcular que pregunta saldrá
-				srand(time(nullptr));
-				int pregunta_aleatoria = rand() % 5 + 1;
+				
+				int pregunta_aleatoria = rand() % preguntas.size();
 				string pregunta = preguntas[pregunta_aleatoria];
 
 				cout << pregunta << endl;
 				cin >> respuesta;
+				transform(respuesta.begin(), respuesta.end(), respuesta.begin(), ::tolower);
 
 				//Hacer un validador simple
 				if (pregunta == preguntas[0])
@@ -210,6 +221,9 @@ int main()
 		case '4':
 			cout << "El tema a tratar es politica" << endl;
 
+			//Calcular que pregunta saldrá
+			srand(time(nullptr));
+
 			for (int i = 0; i < 3; i++)
 			{
 				vector<string> preguntas = { "Quien es actualmente el presidente de espana?",
@@ -219,13 +233,13 @@ int main()
 											 "Que cargo tiene el gobernante de Japon ? "
 				};
 
-				//Calcular que pregunta saldrá
-				srand(time(nullptr));
-				int pregunta_aleatoria = rand() % 5 + 1;
+				
+				int pregunta_aleatoria = rand() % preguntas.size();
 				string pregunta = preguntas[pregunta_aleatoria];
 
 				cout << pregunta << endl;
 				cin >> respuesta;
+				transform(respuesta.begin(), respuesta.end(), respuesta.begin(), ::tolower);
 
 				//Hacer un validador simple
 				if (pregunta == preguntas[0])

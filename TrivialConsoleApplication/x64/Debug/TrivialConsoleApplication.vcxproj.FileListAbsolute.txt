@@ -1,1 +1,2 @@
 C:\Users\catal\Desktop\Repos\FundamentosProgramacionConceptosBasicosClase1\TrivialConsoleApplication\x64\Debug\TrivialConsoleApplication.exe
+C:\Users\catal\Desktop\Repos\FundamentosProgramacion\TrivialConsoleApplication\x64\Debug\TrivialConsoleApplication.exe
