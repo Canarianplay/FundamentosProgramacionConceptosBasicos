@@ -17,15 +17,23 @@ El contenido consta de los siguientes elementos:
 - Tipo estructurado de datos (Arrays y matrices)
 - Estructuras de control   (Condicionales)
 - Bucles
+- Diagrama de flujos
+- Tipo de operadores
+- Sobrecarga de operadores
+- Tipo de datos Enum
+- Librerías en C++
+- Tratamiento de ficheros
 
-Cada una de las partes teóricas van acompañadas de una serés de ejercicios que se encuentran en la rama
-[CodigoEjemplosClase1](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos/tree/feature/CodigoEjemplosClase1)
+Cada una de las partes teóricas van acompañadas de una serie de ejercicios que se encuentran en la rama o en otros repositorios
+[Clase 1](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos/tree/feature/CodigoEjemplosClase1)
+[Clase 2](https://github.com/Canarianplay/TipsOperadores)
+[Clase 3](https://github.com/Canarianplay/EjemploTratamientoFichero)
 
 ## Proyectos finales
 Los proyectos finales realizados en esta parte son los siguientes, todos ellos han sido realizados para una aplicación de consola en C++:
 
 - [Trivial](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos/tree/feature/TrivialConcoleApplication) - Juega para ver quien más acierta 🤯
-- [Adivina el número](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos/tree/feature/GuessTheNumber) - ¿Será capoaz de acertas antes de que se acaben los intentos? 😏
+- [Adivina el número](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos/tree/feature/GuessTheNumber) - ¿Será capaz de acertas antes de que se acaben los intentos? 😏
 - [Calculadora](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos/tree/feature/CalculatorConsoleApplication) - ¿Por qué no intentas mejorarla? Te reto. ✌
 - [Chat Inteligente](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos/tree/feature/ChatConsoleApplication) - El nacimiento de una nueva IA 🤖
 - [El juego del Ahorcado](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos/tree/feature/AhorcadoConsoleApplication) - Diviertete jugando con tus amigos o complicando las partidas 😈
