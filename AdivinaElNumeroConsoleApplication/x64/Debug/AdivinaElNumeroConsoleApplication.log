@@ -1,0 +1,3 @@
+﻿  AdivinaElNumeroConsoleApplication.cpp
+C:\Users\catal\Desktop\Repos\FundamentosProgramacionConceptosBasicosClase1\AdivinaElNumeroConsoleApplication\AdivinaElNumeroConsoleApplication.cpp(18,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  AdivinaElNumeroConsoleApplication.vcxproj -> C:\Users\catal\Desktop\Repos\FundamentosProgramacionConceptosBasicosClase1\AdivinaElNumeroConsoleApplication\x64\Debug\AdivinaElNumeroConsoleApplication.exe
