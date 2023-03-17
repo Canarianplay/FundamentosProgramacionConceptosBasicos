@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+# FundamentosProgramacionConceptosBasicos
+
+## CalculaorWithSobrecargaOperadores.cpp (Clase 2)
+En este fichero podras encontrar dos upgrades realizados al proyecto CalculatorApplicationConsole en el que se realiza lo siguinte:
+- Sobrecarga de operadores
+- Utilización de diferentes tipos de datos
+- Realización de una calculadora más funcional
+
+[Calculator Upgrade](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos/tree/feature/CalculatorConsoleApplication/CalculatorConsoleApplication/CalculaorWithSobrecargaOperadores) 📈
+=======
 # Fundamentos de la Programación (C++)
 ## _Conceptos Básicos_
 
@@ -39,6 +50,7 @@ Los proyectos finales realizados en esta parte son los siguientes, todos ellos h
 - [El juego del Ahorcado](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos/tree/feature/AhorcadoConsoleApplication) - Diviertete jugando con tus amigos o complicando las partidas 😈
 
 Cada uno de estos proyectos se mejoraran con el tiempo y están realizados con los conceptos vistos hasta el momento, te reto a que los mejores.
+>>>>>>> master
 
 ## Uso de ficheros cpp
 
@@ -48,6 +60,16 @@ A continuación solo tendras que seguir los siguientes paso
 1. Abre VS y selecciona abrir un proyecto existente
 2. Selecciona el fichero cpp que extraigas del repositorio
 ```
+<<<<<<< HEAD
+## Tips de uso de los upgrades realizados
+En el repositorio encontraras dos ficheros cpp con códigos similares **(CalculaorWithSobrecargaOperadores, CalculatorWithSobrecargaOperadoresUpgrade2)** como ambos contienen un función **main**, debido a los conceptos vistos hasta ahora, para la ejecución de estas mejoras deberas **comentar** uno de los dos ficheros enteros o bien **sacarlo** del directorio del proyecto.
+
+## Retos
+Te reto a que realices lo siguiente:
+- Sacar fallos de las dos mejoras realizadas
+- Intentar mejorar los dos upgrades realizados
+=======
+>>>>>>> master
 
 ## License
 Realizado por CanarianPlay 🍌
