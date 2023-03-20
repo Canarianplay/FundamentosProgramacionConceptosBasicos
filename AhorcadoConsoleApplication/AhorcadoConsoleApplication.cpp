@@ -27,6 +27,9 @@ void print_hangman(int n) {
     if (n >= 5) hangman[4] = "  |  /";
     if (n == 6) hangman[4] = "  |  / \\";
 
+
+
+
     for (string line : hangman) {
         cout << line << endl;
     }
