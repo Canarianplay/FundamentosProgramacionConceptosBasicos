@@ -28,11 +28,14 @@ int main()
     cout << "Cual es tu pais de origen ? " << endl;
     cin >> pais;
 
+    out << "Cual es tu pais de origen ? " << endl;
+
     cout << "Cual es tu comida favorita ? " << endl;
     cin >> comida;
 
     cout << "Cual es tu mayor aficion ? " << endl;
     cin >> aficion;
+    lo que h;
 
     cout << "Espera un momento estoy procesando la información ... " << endl;
     cout << endl;

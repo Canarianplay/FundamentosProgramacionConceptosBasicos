@@ -1,2 +1,7 @@
 ﻿  ChatConsoleApplication.cpp
-  ChatConsoleApplication.vcxproj -> C:\Users\catal\Desktop\Repos\FundamentosProgramacionConceptosBasicosClase1\ChatConsoleApplication\x64\Debug\ChatConsoleApplication.exe
+C:\Users\catal\Desktop\Repos\FundamentosProgramacion\ChatConsoleApplication\ChatConsoleApplication.cpp(31,5): error C2065: 'out': identificador no declarado
+C:\Users\catal\Desktop\Repos\FundamentosProgramacion\ChatConsoleApplication\ChatConsoleApplication.cpp(38,5): error C2065: 'lo': identificador no declarado
+C:\Users\catal\Desktop\Repos\FundamentosProgramacion\ChatConsoleApplication\ChatConsoleApplication.cpp(38,8): error C2146: error de sintaxis: falta ';' delante del identificador 'que'
+C:\Users\catal\Desktop\Repos\FundamentosProgramacion\ChatConsoleApplication\ChatConsoleApplication.cpp(38,8): error C2065: 'que': identificador no declarado
+C:\Users\catal\Desktop\Repos\FundamentosProgramacion\ChatConsoleApplication\ChatConsoleApplication.cpp(38,12): error C2146: error de sintaxis: falta ';' delante del identificador 'h'
+C:\Users\catal\Desktop\Repos\FundamentosProgramacion\ChatConsoleApplication\ChatConsoleApplication.cpp(38,12): error C2065: 'h': identificador no declarado
