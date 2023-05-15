@@ -22,6 +22,10 @@ int main()
     cout << "Bienvenido al juego de ADIVINA EL NUMERO " << endl;
     cout << "Baby para ganar tendrás que adivinar un numero entre el 1 y el 100. Mucha suerte" << endl;
 
+
+
+
+
     do
     {
         cin >> num_intento;
