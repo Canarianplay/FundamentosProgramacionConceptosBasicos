@@ -68,6 +68,14 @@ En este fichero podras encontrar dos upgrades realizados al proyecto CalculatorA
 
 [Calculator Upgrade](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos/tree/feature/CalculatorConsoleApplication/CalculatorConsoleApplication/CalculaorWithSobrecargaOperadores) 📈
 
+## Upgrades Clase 4
+Se han relaizado las siguientes mejoras en lo proyectos que se comenta a continuación:
+- Morularización de los programas (funciones)
+- Ámbitos de las variables
+- Paso por valor y paso por referencias de variables
+
+[Calculator Upgrade](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos/tree/feature/CalculatorConsoleApplication) 📈
+[Trivial Upgrade](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos/tree/feature/CalculatorConsoleApplication) 📈
 
 ## License
 Realizado por CanarianPlay 🍌
