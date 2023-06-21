@@ -2,7 +2,7 @@
 # Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
 ################################################################################
 
-<<<<<<< HEAD
+
 /CalculatorConsoleApplication/.vs/CalculatorConsoleApplication/v17/TestStore/0/testlog.manifest
 *.opendb
 *.db-wal
@@ -28,7 +28,6 @@
 /CalculatorConsoleApplication/CalculaorWithSobrecargaOperadores/x64/Debug/Calculao.41294e95.tlog/link.write.1.tlog
 /CalculatorConsoleApplication/CalculaorWithSobrecargaOperadores/x64/Debug/Calculao.41294e95.tlog/link.read.1.tlog
 *.enc
-=======
 /CalculatorConsoleApplication/.vs/CalculatorConsoleApplication/FileContentIndex
 /CalculatorConsoleApplication/.vs/CalculatorConsoleApplication/v17/ipch/AutoPCH/eabf9f1d1538b8e3
 /CalculatorConsoleApplication/.vs/CalculatorConsoleApplication/v17/TestStore/0
@@ -39,6 +38,23 @@
 /TrivialConsoleApplication/.vs/TrivialConsoleApplication/v17/Browse.VC.db
 /TrivialConsoleApplication/.vs/TrivialConsoleApplication/v17
 /TrivialConsoleApplication/.vs
->>>>>>> master
+/CalculatorConsoleApplication/.vs/CalculatorConsoleApplication/v17/Browse.VC.db
+/CalculatorConsoleApplication/.vs/CalculatorConsoleApplication/v17/.suo
+/CalculatorConsoleApplication/x64/Debug/Calculat.c7f4e6fb.tlog/link.write.1.tlog
+/CalculatorConsoleApplication/x64/Debug/Calculat.c7f4e6fb.tlog/link.read.1.tlog
+/CalculatorConsoleApplication/x64/Debug/Calculat.c7f4e6fb.tlog/link.command.1.tlog
+/CalculatorConsoleApplication/x64/Debug/Calculat.c7f4e6fb.tlog/CL.write.1.tlog
+/CalculatorConsoleApplication/x64/Debug/Calculat.c7f4e6fb.tlog/CL.read.1.tlog
+/CalculatorConsoleApplication/x64/Debug/Calculat.c7f4e6fb.tlog/CL.command.1.tlog
+/CalculatorConsoleApplication/x64/Debug/Calculat.c7f4e6fb.tlog/CalculatorConsoleApplication.lastbuildstate
+/CalculatorConsoleApplication/x64/Debug/vc143.pdb
+/CalculatorConsoleApplication/x64/Debug/vc143.idb
+/CalculatorConsoleApplication/x64/Debug/CalculatorConsoleApplication.exe
+/CalculatorConsoleApplication/x64/Debug/CalculatorConsoleApplication.exe.recipe
+/CalculatorConsoleApplication/x64/Debug/CalculatorConsoleApplication.ilk
+/CalculatorConsoleApplication/x64/Debug/CalculatorConsoleApplication.log
+/CalculatorConsoleApplication/x64/Debug/CalculatorConsoleApplication.obj
+/CalculatorConsoleApplication/x64/Debug/CalculatorConsoleApplication.pdb
+/CalculatorConsoleApplication/x64/Debug/CalculatorConsoleApplication.vcxproj.FileListAbsolute.txt
 /TrivialConsoleApplication/.vs/TrivialConsoleApplication/v17/Browse.VC.db
 /TrivialConsoleApplication/.vs/TrivialConsoleApplication/v17/.suo
