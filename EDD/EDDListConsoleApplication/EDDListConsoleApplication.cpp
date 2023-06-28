@@ -1,7 +1,14 @@
 // EDDListConsoleApplication --> Algoritmo de utilización de listas simples EDD (estructura de datos dinamica)
 
 /*
-* 
+* Este programa crea una lista enlazada de enteros (std::list<int>) y realiza las siguientes operaciones
+1.	Agrega elementos a la lista utilizando push_back().
+2.	Muestra los elementos de la lista utilizando un bucle for.
+3.	Accede al primer y último elemento de la lista utilizando front() y back().
+4.	Inserta un elemento en la posición 2 utilizando insert().
+5.	Elimina el segundo elemento utilizando erase().
+6.	Muestra los elementos de la lista después de las operaciones.
+
 */
 
 #include <iostream>
