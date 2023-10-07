@@ -25,11 +25,15 @@ El contenido consta de los siguientes elementos:
 - Tipo de datos Enum
 - Librerías en C++
 - Tratamiento de ficheros
+- EDD
+- Recursividad
 
 Cada una de las partes teóricas van acompañadas de una serie de ejercicios que se encuentran en la rama o en otros repositorios
 [Clase 1](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos/tree/feature/CodigoEjemplosClase1)
 [Clase 2](https://github.com/Canarianplay/TipsOperadores)
 [Clase 3](https://github.com/Canarianplay/EjemploTratamientoFichero)
+[Clase 4](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos/tree/feature/CalculatorConsoleApplication)
+[Clase 5](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos/tree/feature/ProyectoEDD)
 
 ## Proyectos finales
 Los proyectos finales realizados en esta parte son los siguientes, todos ellos han sido realizados para una aplicación de consola en C++:
@@ -76,6 +80,10 @@ Se han relaizado las siguientes mejoras en lo proyectos que se comenta a continu
 
 [Calculator Upgrade](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos/tree/feature/CalculatorConsoleApplication) 📈
 [Trivial Upgrade](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos/tree/feature/CalculatorConsoleApplication) 📈
+
+## Upgrade Clase 5
+En esta clase no se ha tocado ninguno de los proyectos finales. Más bien, se han creado ejemplos prácticas y precisos del uso de las EDD y la recursividad
+[Clase 5 Ejemplos](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos/tree/feature/ProyectoEDD)
 
 ## License
 Realizado por CanarianPlay 🍌
