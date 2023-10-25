@@ -1,1 +1,2 @@
 C:\Users\catal\Desktop\Repos\FundamentosProgramacionConceptosBasicosClase1\AhorcadoConsoleApplication\x64\Debug\AhorcadoConsoleApplication.exe
+C:\Users\catal\Desktop\Repos\FundamentosProgramacion\AhorcadoConsoleApplication\x64\Debug\AhorcadoConsoleApplication.exe
