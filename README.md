@@ -79,11 +79,23 @@ Se han relaizado las siguientes mejoras en lo proyectos que se comenta a continu
 - Paso por valor y paso por referencias de variables
 
 [Calculator Upgrade](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos/tree/feature/CalculatorConsoleApplication) 📈
-[Trivial Upgrade](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos/tree/feature/CalculatorConsoleApplication) 📈
+[Trivial Upgrade](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos/tree/feature/TrivialConcoleApplication) 📈
 
 ## Upgrade Clase 5
 En esta clase no se ha tocado ninguno de los proyectos finales. Más bien, se han creado ejemplos prácticas y precisos del uso de las EDD y la recursividad
 [Clase 5 Ejemplos](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos/tree/feature/ProyectoEDD)
+
+## Upgrade Clase 6
+Se han relaizado las siguientes mejoras en lo proyectos que se comenta a continuación:
+- Uso y creación de objetos
+- Uso y creación de Clases
+- Herencia y clases derivadas
+
+[Ahorcado Upgrade POO](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos/tree/feature/AhorcadoPOO) 📈
+[Trivial Upgrade POO](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos/tree/feature/TrivialPlatanitoPOO) 📈
+
+## ¡¡¡RECUERDA!!!
+En la rama master(hoy en día conocida como main) SIEMPRE tendrás lo último que se ha realizado.
 
 ## License
 Realizado por CanarianPlay 🍌
