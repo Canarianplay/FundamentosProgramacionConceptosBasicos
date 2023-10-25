@@ -1,2 +1,3 @@
 ﻿  TrivialConsoleApplication.cpp
+C:\Users\catal\Desktop\Repos\FundamentosProgramacion\TrivialConsoleApplication\TrivialConsoleApplication.cpp(182,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
   TrivialConsoleApplication.vcxproj -> C:\Users\catal\Desktop\Repos\FundamentosProgramacion\TrivialConsoleApplication\x64\Debug\TrivialConsoleApplication.exe
