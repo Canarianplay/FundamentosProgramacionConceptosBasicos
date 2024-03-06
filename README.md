@@ -86,13 +86,24 @@ En esta clase no se ha tocado ninguno de los proyectos finales. Más bien, se ha
 [Clase 5 Ejemplos](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos/tree/feature/ProyectoEDD)
 
 ## Upgrade Clase 6
-Se han relaizado las siguientes mejoras en lo proyectos que se comenta a continuación:
+Se han relizado las siguientes mejoras en lo proyectos que se comenta a continuación:
 - Uso y creación de objetos
 - Uso y creación de Clases
 - Herencia y clases derivadas
 
 [Ahorcado Upgrade POO](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos/tree/feature/AhorcadoPOO) 📈
 [Trivial Upgrade POO](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos/tree/feature/TrivialPlatanitoPOO) 📈
+
+## Upgrade Clase 7
+Se han realizado las siguientes mejoras en lo proyectos que se comenta a continuación:
+- Uso del polimorfismo y encapsulamiento de datos
+- Uso del tramiento de errores
+
+Los proyectos utilizados han sido:
+- Ahorcado App📈
+- Trivial App📈
+  
+**Los proyectos solo se encuentras en la rama master ya que están completaente amctualizados con todos los upgrades realizados hasta el momento.
 
 ## ¡¡¡RECUERDA!!!
 En la rama master(hoy en día conocida como main) SIEMPRE tendrás lo último que se ha realizado.
