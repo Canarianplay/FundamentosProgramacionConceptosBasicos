@@ -1,1 +1,3 @@
-﻿  AhorcadoConsoleApplication.vcxproj -> C:\Users\catal\Desktop\Repos\FundamentosProgramacion\AhorcadoConsoleApplication\x64\Debug\AhorcadoConsoleApplication.exe
+﻿  AhorcadoConsoleApplication.cpp
+C:\Users\catal\Desktop\Repos\FundamentosProgramacion\AhorcadoConsoleApplication\AhorcadoConsoleApplication.cpp(215,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  AhorcadoConsoleApplication.vcxproj -> C:\Users\catal\Desktop\Repos\FundamentosProgramacion\AhorcadoConsoleApplication\x64\Debug\AhorcadoConsoleApplication.exe

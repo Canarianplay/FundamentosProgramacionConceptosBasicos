@@ -2,15 +2,14 @@
 Crea un programa que haga preguntas sobre un tema específico (por ejemplo, historia, geografía, cine, etc.) y permita al usuario ingresar sus respuestas.
 Luego, imprima una puntuación al final basada en cuántas respuestas correctas proporcionó el usuario.*/
 
-/*Upgrade(POO): Crearemos una clase Question para representar una pregunta con su respuesta y un clase Quiz para manejar todo el juego.
-	Posteriormente agregaremos herencia creando un clase derivada de Quiz para diferentes temas*/
+/*Upgrade(POO): Este codigo contedrán la aplicación del polimorfismo y encapsulamiento de datos
+ *              asi como el uso de un tratamiento de errores adecuado
+*/
 
 
 /*TODO para ustedes mis platanitos:
-
-  1. Completa las dos clases derivadas que faltan
-  2. Modifica el código para que sea posible jugar con estas nuevas clases creadas
-
+	1. Si no lo hiciste en la clase anterior, completa este código con diferentes y más temas de los que hacer preguntas (Si los conepctos que aprendiste mi rey)
+	2. Si tu observas mas posibles errores que peudan surgir durante la ejecución del código sientete libre de incluir cualquier tratamiento para ello
 */
 
 #include <iostream>
@@ -18,8 +17,21 @@ Luego, imprima una puntuación al final basada en cuántas respuestas correctas 
 #include <vector>
 #include <algorithm>
 #include <map>
+#include <stdexcept> //Necesario para las excepciones estandar
 
 using namespace std;
+
+//Interfaz para el juego
+class Game 
+{
+	public:
+
+		virtual void playGame() = 0;
+		virtual ~Game() {}
+
+		virtual void printGameResult() = 0;
+		
+};
 
 // Clase base que representa una pregunta con su respuesta
 class Question 
@@ -52,18 +64,37 @@ class Question
 		//check de la respuesta (answer)
 		bool checkAnswer(const string& userAnswer)
 		{
-			string lowerUserAnswer = userAnswer;
+			//Metemos tratamiento de errores
+			string lowerUserAnswer = "";
+			try 
+			{
+				lowerUserAnswer = userAnswer;
+				transform(lowerUserAnswer.begin(), lowerUserAnswer.end(), lowerUserAnswer.begin(), ::tolower);
 
-			transform(lowerUserAnswer.begin(), lowerUserAnswer.end(), lowerUserAnswer.begin(), ::tolower);
+				if (userAnswer == answer) 
+				{
+					return true;
+				}
+				else 
+				{
+					throw invalid_argument("Respuesta incorrecta");
+				}
+			}
+			catch (const exception& ex) 
+			{
+				cerr << "Error:" << ex.what() << endl;
+				return false;
+			}
+			
 
-			return userAnswer == answer;
+			return lowerUserAnswer == answer;
 		}
 };
 
 
 
 //Clase base que representa el juego
-class Quiz
+class Quiz : public Game
 {
 	protected:
 		int score;
@@ -84,36 +115,38 @@ class Quiz
 		}
 
 		//Jugamos
-		void play()
+		void playGame() override
 		{
 			for (size_t i = 0; i < 3; i++)
 			{
-				int randomIndex = rand() % questions.size();
-				Question& currentQuestion = questions[randomIndex];
-
-				cout << currentQuestion.getQuestion() << endl;
-				string userAnswer;
-				std::getline(std::cin, userAnswer);
-				transform(userAnswer.begin(), userAnswer.end(), userAnswer.begin(), ::tolower);
-
-				if(currentQuestion.checkAnswer(userAnswer))
+				try 
 				{
-					cout << "Respuesta correcta." << endl;
-					score++;
-				}
-				else
-				{
-					cout << "Respuesta incorrecta. La respuesta correcta era: " << currentQuestion.getAnswer() << endl;
-				}
+					int randomIndex = rand() % questions.size();
+					Question& currentQuestion = questions[randomIndex];
 
-				questions.erase(questions.begin() + randomIndex);
+					cout << currentQuestion.getQuestion() << endl;
+					string userAnswer;
+					std::getline(std::cin, userAnswer);
+					transform(userAnswer.begin(), userAnswer.end(), userAnswer.begin(), ::tolower);
+
+					if (currentQuestion.checkAnswer(userAnswer))
+					{
+						cout << "Respuesta correcta." << endl;
+						score++;
+					}
+					else
+					{
+						cout << "Respuesta incorrecta. La respuesta correcta era: " << currentQuestion.getAnswer() << endl;
+					}
+
+					questions.erase(questions.begin() + randomIndex);
+				}
+				catch(const out_of_range& ex)
+				{
+					cerr << "Error:" << ex.what() << endl;
+				}
 			}
-
-			printGameResult();
 		}
-
-		
-		virtual void printGameResult() const = 0;
 };
 
 
@@ -136,15 +169,22 @@ class SportQuiz : public Quiz
 		~SportQuiz() {};
 
 
-		void printGameResult() const override 
+		void printGameResult() override 
 		{
-			if(score == 3)
+			try
 			{
-				cout << "Felicidades acabas de ganar el platanito azul" << endl;
+				if (score == 3)
+				{
+					cout << "Felicidades acabas de ganar el platanito azul" << endl;
+				}
+				else 
+				{
+					throw runtime_error("Mira ver si estudiamos un poquito mas platanito");
+				}
 			}
-			else 
+			catch (const exception& ex)
 			{
-				cout << "Mira ver si estudiamos un poquito mas platanito " << endl;
+				cerr << "Error:" << ex.what() << endl;
 			}
 		}
 };
@@ -169,15 +209,22 @@ class HistoryQuiz : public Quiz
 		//Destructor
 		~HistoryQuiz() {};
 
-		void printGameResult() const override
+		void printGameResult() override
 		{
-			if (score == 3)
+			try
 			{
-				cout << "Felicidades acabas de ganar el platanito rojo" << endl;
+				if (score == 3)
+				{
+					cout << "Felicidades acabas de ganar el platanito azul" << endl;
+				}
+				else
+				{
+					throw runtime_error("Mira ver si estudiamos un poquito mas platanito");
+				}
 			}
-			else
+			catch (const exception& ex)
 			{
-				cout << "Mira ver si estudiamos un poquito mas platanito " << endl;
+				cerr << "Error:" << ex.what() << endl;
 			}
 		}
 
@@ -186,42 +233,56 @@ class HistoryQuiz : public Quiz
 //Funcion principal
 int main()
 {
-	srand(time(nullptr));
-	char continuar;
-
-	do
+	try 
 	{
-		//Empieza el juego
-		cout << "Bienvenido al juego del platanito, cuanto mas aciertes más puntos obtendras" << endl;
+		srand(time(nullptr));
+		char continuar;
 
-		cout << "Elige entre las siguientes cartas: azul, rojo, verde, amarillo" << endl;
-		string cartaStr;
-		cin >> cartaStr;
-		transform(cartaStr.begin(),cartaStr.end(), cartaStr.begin(), ::tolower);
-		std::cin.ignore();
-
-		Quiz* quiz = nullptr;
-
-		if (cartaStr == "azul")
+		do
 		{
-			cout << "El tema será DEPORTES!!!" << endl;
-			quiz = new SportQuiz();
-		}
-		else if (cartaStr == "rojo") 
-		{
-			cout << "El tema será HISTORIA!!!" << endl;
-			quiz = new HistoryQuiz();
-		}
-		else 
-		{
-			cout << "No es tan difícil elegir entre 4 cartas enumeradas del 1 al 4" << endl;
-		}
+			//Empieza el juego
+			cout << "Bienvenido al juego del platanito, cuanto mas aciertes más puntos obtendras" << endl;
 
-		quiz->play();
-		delete quiz;
+			cout << "Elige entre las siguientes cartas: azul, rojo, verde, amarillo" << endl;
+			string cartaStr;
+			cin >> cartaStr;
+			transform(cartaStr.begin(), cartaStr.end(), cartaStr.begin(), ::tolower);
+			std::cin.ignore();
 
-		cout << "Desea continuar ? (S/N) " << endl;
-		std::cin >> continuar;
+			Game* game = nullptr;
 
-	} while (continuar != 'N');
+			if (cartaStr == "azul")
+			{
+				cout << "El tema será DEPORTES!!!" << endl;
+				game = new SportQuiz();
+			}
+			else if (cartaStr == "rojo")
+			{
+				cout << "El tema será HISTORIA!!!" << endl;
+				game = new HistoryQuiz();
+			}
+			else
+			{
+				throw invalid_argument("Opción no valida... prueba de nuevo");
+			}
+
+			if (game)
+			{
+				game->playGame();
+				game->printGameResult();
+				delete game;
+			}
+
+
+			cout << "Desea continuar ? (S/N) " << endl;
+			std::cin >> continuar;
+
+		} while (continuar != 'N');
+	}
+	catch (const std::exception& ex) 
+	{
+		cerr << "Error:" << ex.what() << endl;
+	}
+
+	return  0;
 }
