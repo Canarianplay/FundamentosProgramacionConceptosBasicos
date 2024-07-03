@@ -1,4 +1,6 @@
-﻿  TrivialConsoleApplication.cpp
-C:\Users\catal\Desktop\Repos\FundamentosProgramacion\TrivialConsoleApplication\TrivialConsoleApplication.cpp(238,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+﻿  HistoryQuiz.cpp
+  TrivialConsoleApplication_Main.cpp
+C:\Users\catal\Desktop\Repos\FundamentosProgramacion\TrivialConsoleApplication\TrivialConsoleApplication_Main.cpp(30,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  Generando código...
   LINK : no se encontró C:\Users\catal\Desktop\Repos\FundamentosProgramacion\TrivialConsoleApplication\x64\Debug\TrivialConsoleApplication.exe o no lo generó el último vínculo incremental; ejecutando vínculo completo
   TrivialConsoleApplication.vcxproj -> C:\Users\catal\Desktop\Repos\FundamentosProgramacion\TrivialConsoleApplication\x64\Debug\TrivialConsoleApplication.exe

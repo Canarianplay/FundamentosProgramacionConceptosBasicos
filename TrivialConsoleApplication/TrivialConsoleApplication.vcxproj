@@ -127,7 +127,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="TrivialConsoleApplication.cpp" />
+    <ClCompile Include="HistoryQuiz.cpp" />
+    <ClCompile Include="Question.cpp" />
+    <ClCompile Include="Quiz.cpp" />
+    <ClCompile Include="SportQuiz.cpp" />
+    <ClCompile Include="TrivialConsoleApplication_Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="HistoryQuiz.h" />
+    <ClInclude Include="Question.h" />
+    <ClInclude Include="Quiz.h" />
+    <ClInclude Include="SportQuiz.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
