@@ -127,7 +127,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AhorcadoConsoleApplication.cpp" />
+    <ClCompile Include="AhorcadoConsoleApplication_Main.cpp" />
+    <ClCompile Include="GameElement.cpp" />
+    <ClCompile Include="Hangman.cpp" />
+    <ClCompile Include="HangmanGame.cpp" />
+    <ClCompile Include="WordToGuess.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Drawable.h" />
+    <ClInclude Include="GameElement.h" />
+    <ClInclude Include="Hangman.h" />
+    <ClInclude Include="HangmanGame.h" />
+    <ClInclude Include="WordToGuess.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

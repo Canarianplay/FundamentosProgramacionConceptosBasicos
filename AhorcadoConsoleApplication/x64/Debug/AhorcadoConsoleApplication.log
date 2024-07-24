@@ -1,3 +1,8 @@
-﻿  AhorcadoConsoleApplication.cpp
-C:\Users\catal\Desktop\Repos\FundamentosProgramacion\AhorcadoConsoleApplication\AhorcadoConsoleApplication.cpp(215,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+﻿  AhorcadoConsoleApplication_Main.cpp
+C:\Users\catal\Desktop\Repos\FundamentosProgramacion\AhorcadoConsoleApplication\AhorcadoConsoleApplication_Main.cpp(26,13): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  GameElement.cpp
+  Hangman.cpp
+  HangmanGame.cpp
+  WordToGuess.cpp
+  Generando código...
   AhorcadoConsoleApplication.vcxproj -> C:\Users\catal\Desktop\Repos\FundamentosProgramacion\AhorcadoConsoleApplication\x64\Debug\AhorcadoConsoleApplication.exe
