@@ -27,6 +27,9 @@ El contenido consta de los siguientes elementos:
 - Tratamiento de ficheros
 - EDD
 - Recursividad
+- Gestión de la memoria
+- Constructores y destructores
+- Estructura de un proyecto
 
 Cada una de las partes teóricas van acompañadas de una serie de ejercicios que se encuentran en la rama o en otros repositorios
 [Clase 1](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos/tree/feature/CodigoEjemplosClase1)
@@ -34,6 +37,9 @@ Cada una de las partes teóricas van acompañadas de una serie de ejercicios que
 [Clase 3](https://github.com/Canarianplay/EjemploTratamientoFichero)
 [Clase 4](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos/tree/feature/CalculatorConsoleApplication)
 [Clase 5](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos/tree/feature/ProyectoEDD)
+[Clase 6](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos)
+[Clase 7](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos)
+[Clase 8](https://github.com/Canarianplay/FundamentosProgramacionConceptosBasicos)
 
 ## Proyectos finales
 Los proyectos finales realizados en esta parte son los siguientes, todos ellos han sido realizados para una aplicación de consola en C++:
@@ -98,6 +104,15 @@ Se han relizado las siguientes mejoras en lo proyectos que se comenta a continua
 Se han realizado las siguientes mejoras en lo proyectos que se comenta a continuación:
 - Uso del polimorfismo y encapsulamiento de datos
 - Uso del tramiento de errores
+
+Los proyectos utilizados han sido:
+- Ahorcado App📈
+- Trivial App📈
+
+## Upgrade Clase 8
+Se han realizado las siguientes mejoras en lo proyectos que se comenta a continuación:
+- Uso de operadores new y delete para una correcta gestión de la memoria
+- Reestructuración de los ficheros de los proyectos
 
 Los proyectos utilizados han sido:
 - Ahorcado App📈
